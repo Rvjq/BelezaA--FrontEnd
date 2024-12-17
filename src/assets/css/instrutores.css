@@ -1,0 +1,96 @@
+/* Estilo geral da seção de Instrutores */
+.container {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Descrição dos instrutores */
+.container p {
+  font-size: 1.2rem;
+  color: #8D8D8D;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Layout para os cards de instrutores */
+.instrutores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid responsiva */
+  gap: 60px;
+  padding: 0 10px;
+  justify-items: center;
+}
+
+/* Estilo de cada card de instrutor */
+.instrutor {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagem do instrutor */
+.instrutor img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito hover na imagem */
+.instrutor:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilo da área de informações do instrutor */
+.instrutor-info {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Nome do instrutor */
+.instrutor h3 {
+  font-size: 1.8rem;
+  color: #CDA582; /* Cor dourada */
+  margin-bottom: 10px;
+}
+
+/* Descrição do instrutor */
+.instrutor p {
+  font-size: 1rem;
+  color: #8D8D8D;
+  line-height: 1.6;
+}
+
+/* Efeito de hover para o card */
+.instrutor:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .sections-title {
+    font-size: 2rem;
+  }
+
+  .instrutor {
+    padding: 15px;
+  }
+
+  .instrutor h3 {
+    font-size: 1.6rem;
+  }
+
+  .instrutor p {
+    font-size: 0.9rem;
+  }
+}

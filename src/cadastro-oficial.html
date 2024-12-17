@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Beleza Aê</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .register-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .register-container h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .register-container img {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: auto;
+      }
+
+      .register-container input[type="text"],
+      .register-container input[type="password"],
+      .register-container input[type="email"] {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .register-container button {
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .register-container button:hover {
+        background-color: #0056b3;
+      }
+
+      .register-container .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .register-container .social-icons a {
+        color: #333;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s;
+      }
+
+      .register-container .social-icons a:hover {
+        color: #007bff;
+      }
+
+      .register-container p {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .register-container p a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .register-container p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="register-container">
+      <h1>Cadastro</h1>
+      <img src="assets/img/logo.png" alt="Logo Beleza Aê" />
+
+      <form action="index.html" method="post">
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Nome Completo"
+          required
+        />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input
+          type="text"
+          name="username"
+          placeholder="Nome de Usuário"
+          required
+        />
+        <input type="password" name="password" placeholder="Senha" required />
+        <input
+          type="password"
+          name="confirm_password"
+          placeholder="Confirme a Senha"
+          required
+        />
+        <button type="submit"><a href="index.html"></a>Cadastrar</button>
+      </form>
+
+      <!-- Ícones de Redes Sociais -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.whatsapp.com" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+
+      <p>Já tem uma conta? <a href="tela-login.html">Faça login</a></p>
+    </div>
+  </body>
+</html>

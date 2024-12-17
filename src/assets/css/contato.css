@@ -1,0 +1,58 @@
+/* Section Styling */
+.contact-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+.contact-section p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Subtitle Styling */
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Map Container */
+.map-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Contact Details */
+.contact-details {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Responsive Design for Map */
+@media (max-width: 768px) {
+  .map-container iframe {
+    width: 100%;
+    height: 350px;
+  }
+}

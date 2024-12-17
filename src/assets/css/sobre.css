@@ -1,0 +1,70 @@
+/* Estilo geral da seção Sobre o Salão */
+.sobre-salao {
+  background-color: #fff; /* Fundo branco */
+  padding: 50px 20px;
+  color: #000; /* Cor de texto escura para contraste */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Texto de introdução */
+.intro-text {
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo dos blocos de valores, história e diferenciais */
+h3 {
+  font-size: 1.8rem;
+  color: #CDA582; /* Cor dourada para subtítulos */
+  margin-bottom: 10px;
+}
+
+.valores, .historia, .diferenciais {
+  text-align: left;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Estilo para as listas de valores e diferenciais */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #000;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para links (se houver) */
+a {
+  color: #CDA582;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade: Ajuste em telas menores */
+@media (max-width: 768px) {
+  .sobre-salao {
+    padding: 40px 15px;
+  }
+  .sections-title {
+    font-size: 2rem;
+  }
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .valores, .historia, .diferenciais {
+    padding: 0 20px;
+  }
+}
